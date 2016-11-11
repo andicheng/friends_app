@@ -1,0 +1,9 @@
+<div ng-controller="showController">
+   <fieldset>
+      <legend>Show Friend</legend>
+      <p>Name: {{friend.first_name}} {{friend.last_name}}</p>
+      <p>Birthdate: {{friend.birthdate | date:'MM/dd/yyyy'}}</p>
+      <p>{{friend.createdAt | date:'MM/dd/yyyy'}}<br>
+      Date Added</p>
+   </fieldset>
+</div>

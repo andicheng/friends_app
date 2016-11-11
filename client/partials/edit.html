@@ -1,0 +1,12 @@
+<div ng-controller="editController">
+   <fieldset>
+      <legend>Edit Friend</legend>
+      <form>
+         <p>First Name <input type="text" placeholder="{{friend.first_name}}" ng-model="newFriend.first_name"></p>
+         <p>Last Name <input type="text" placeholder="{{friend.last_name}}" ng-model="newFriend.last_name"></p>
+         <p>Birth Date <input type="date" ng-model='newFriend.birthdate'></p>
+         <input type="submit" value="Edit Friend" ng-click="edit(friend._id)">
+      </form>
+
+   </fieldset>
+</div>

@@ -1,0 +1,25 @@
+<div ng-controller="newController">
+   <fieldset>
+      <legend>Friends</legend>
+      <table>
+         <col width='200'>
+         <col width='120'>
+         <col width='120'>
+         <col width='120'>
+         <tr>
+            <th>Name</th>
+            <th>Show</th>
+            <th>Update</th>
+            <th>Delete</th>
+         </tr>
+         <tr ng-repeat="friend in friends | filter: search">
+            <td>{{friend.first_name}} {{friend.last_name}}</td>
+            <td><a ng-href="#/show/{{friend._id}}">Show</a></td>
+            <td><a ng-href="#/edit/{{friend._id}}">Edit</a></td>
+            <td><a href='' ng-click="delete(friend._id)">Delete</a></td>
+         </tr>
+      </table>
+      <a href="#/new">New Friend</a></td>
+      <label>Search: <input ng-model="search"></label>
+   </fieldset>
+</div>

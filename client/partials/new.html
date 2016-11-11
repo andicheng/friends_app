@@ -1,0 +1,13 @@
+<div ng-controller="newController">
+   <fieldset>
+      <legend>New Friend</legend>
+      <form>
+         <p>First Name <input type="text" ng-model="newFriend.first_name"></p>
+         <p>Last Name <input type="text" ng-model="newFriend.last_name"></p>
+         <p>Birth Date <input type="date" ng-model='newFriend.birthdate'></p>
+         <input type="submit" value="Add New Friend" ng-click="add()">
+      </form>
+
+<!-- {{friend.birthdate | date:'MM/dd/yyyy'}} -->
+   </fieldset>
+</div>
